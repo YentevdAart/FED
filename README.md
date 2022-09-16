@@ -39,9 +39,9 @@ Mijn focus is het responsive maken van de website.
 <a href="https://www.li.me/">Lime vehicles website</a>
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
-<img scr="images/FullLimePageMobile.png" width="375px" alt="foto van de Lime vehicles homepage" >
+Home Pagina 
+
+<img src="images/FullLimeHomePageMobile.png" alt="Lime homepagina"> 
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
