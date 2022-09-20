@@ -39,14 +39,13 @@ Mijn focus is het responsive maken van de website.
 <a href="https://www.li.me/">Lime vehicles website</a>
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-Home Pagina 
+Homepagina 
 
-<img src="images/FullLimeHomePageMobile.png" alt="Lime homepagina"> 
+<img src="images/FullLimeHomePageMobile.png" width="375px" alt="Lime homepagina"> 
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
+Detailpagina 
+<img src="images/FullLimeDetailPageMobile.png" width="375px" alt="Lime blogpagina">
 </details>
 
 
@@ -58,14 +57,11 @@ hier de naam van de pagina
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+### de homepagina: 
+<img src="images/breakdown-schets-homepagina-mobiel.png" width="375px" alt="breakdown van de homepagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### detailpagina: 
+<img src="images/breakdown-schets-detailPagina-mobiel.png" width="375px" alt="breakdown van de blogpagina">
 
 </details>
 
@@ -146,29 +142,31 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
+<ol> 
+<li>Bij veel zichts beperkingen waren de stukken tekst op de website te klein om te lezen.</li>
+<li>Sommigen knoppen waren lastig te onderscheiden met de achtergrond.</li>
+<li>De hover kleur is een te kleine verandering, om het verschil duidelijk te zien.</li>
+<li>Er is geen darkmode op deze website</li>
+</ol>
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Te kleine tekst
+Op te lossen door het vergroten van lettertype.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### CTA slecht zichtbaar 
+<img src="images/CTAhiding.png" alt="call to action verborgen in achtergrond image">
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Op te lossen door de call to action button een kleur te geven.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Hover kleur te klein verschil 
+<img src="images/HoverTinyDiffrence.png" alt="hover kleur is 1 tint donkerder">
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Op te lossen door de huidige hover kleur te verplaatsen met een donker grijze hovekleur. 
+
+
+#### Geen darkmode. 
+
+Op te lossen door een darkmode toggle toe te voegen op de website.
 
 </details>
 
