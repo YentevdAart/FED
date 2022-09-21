@@ -77,17 +77,17 @@ Detailpagina
 ### Stand van zaken
 Lastige HTML bij menu toggle button
 <img src="images/Schermafbeelding%202022-09-21%20om%2020.43.15.png" width="375px" alt="screenshot van menu toggle">
-
+<img src="images/ScreenMenuToggleHtml.png" width="375px" alt="Html code van menu toggle">
 
 ### Agenda voor meeting 22 sept '22
 Groep C1
 
-| Emile          | Tijn               | Tufan        | Robin            | Yente 
-| ---            | ---                | ---          | ---              | ---
-| (14min)        | (14 min)           | (14min)      | (14min)          | (14min)
-| Code laten     | Breakdown schets   |              |                  | Code laten 
-| zien           | controleren.       | ...          | ...              | zien + controleren
-|                | 2 vragen over web. |              |                  |
+| Emile             | Tijn                         | Tufan        | Robin            | Yente 
+| ---               | ---                          | ---          | ---              | ---
+| (14min)           | (14 min)                     | (14min)      | (14min)          | (14min)
+| Code laten zien   | Breakdown schets controleren.|              |                  | Code laten zien + controleren
+|                   |                              | ...          | ...              | 
+|                   | 2 vragen over web.           |              |                  |
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
