@@ -75,18 +75,19 @@ Detailpagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Lastige HTML bij menu toggle button
+<img src="images/Schermafbeelding%202022-09-21%20om%2020.43.15.png" width="375px" alt="screenshot van menu toggle">
 
 
-### Agenda voor meeting
-samen met je groepje opstellen
+### Agenda voor meeting 22 sept '22
+Groep C1
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+| Emile          | Tijn               | Tufan        | Robin            | Yente 
+| ---            | ---                | ---          | ---              | ---
+| (14min)        | (14 min)           | (14min)      | (14min)          | (14min)
+| Code laten     | Breakdown schets   |              |                  | Code laten 
+| zien           | controleren.       | ...          | ...              | zien + controleren
+|                | 2 vragen over web. |              |                  |
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -112,10 +113,10 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
+Groep C1
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
+| Emile          | Tijn               | Tufan        | Robin            | Yente 
+| ---            | ---                | ---          | ---              | ---
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
@@ -184,14 +185,13 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
+Groep C1
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
+| Emile          | Tijn               | Tufan        | Robin            | Yente 
+| ---            | ---                | ---          | ---              | ---
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
-
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
