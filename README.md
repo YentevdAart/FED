@@ -58,7 +58,7 @@ Detailpagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de homepagina: 
-<img src="images/breakdown-schets-homepagina-mobiel.png" width="375px" alt="breakdown van de homepagina">
+<img src="images/breakdown-schets-homePagina-mobiel.png" width="375px" alt="breakdown van de homepagina">
 
 ### detailpagina: 
 <img src="images/breakdown-schets-detailPagina-mobiel.png" width="375px" alt="breakdown van de blogpagina">
@@ -110,9 +110,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-<img src="images/2eDeelHomepagina" width="375px" alt="homepagina ccs schets">
-<img src="images/3eDeelHomepagina" width="375px" alt="homepagina ccs schets">
-<img src="images/4eDeelHomepagina" width="375px" alt="homepagina ccs schets">
+<img src="images/2eDeelHomepage width="375px" alt="homepagina ccs schets">
+<img src="images/3eDeelHomepage" width="375px" alt="homepagina ccs schets">
+<img src="images/4eDeelHomepage" width="375px" alt="homepagina ccs schets">
 
 
 ### Agenda voor meeting
