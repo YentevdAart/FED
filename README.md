@@ -32,7 +32,7 @@ Mijn focus is het responsive maken van de website.
 
 ## Je website
 
-<details open>
+<details sluit>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
@@ -54,7 +54,7 @@ Detailpagina
 
 ## Breakdownschets (week 1)
 
-<details>
+<details sluit>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de homepagina: 
@@ -73,6 +73,9 @@ Detailpagina
 
 <details>
 <summary>uitwerken voor 1e voortgang</summary>
+<img src="images/2eDeelHomepagina" width="375px" alt="homepagina ccs schets">
+<img src="images/3eDeelHomepagina" width="375px" alt="homepagina ccs schets">
+<img src="images/4eDeelHomepagina" width="375px" alt="homepagina ccs schets">
 
 ### Stand van zaken
 Lastige HTML bij menu toggle button
@@ -103,9 +106,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
 
-## Voortgang 2 (week 3)
+## Voortgang 2 (week 3) 6-okt
 
-<details>
+<details open>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
@@ -117,7 +120,7 @@ Groep C1
 
 | Emile          | Tijn               | Tufan        | Robin            | Yente 
 | ---            | ---                | ---          | ---              | ---
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |css issiues oplossen
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
@@ -138,7 +141,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Toegankelijkheidstest (week 4)
 
-<details>
+<details sluit>
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
@@ -177,7 +180,7 @@ Op te lossen door een darkmode toggle toe te voegen op de website.
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details sluit>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
@@ -232,8 +235,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. bron 1: Coyier, C. (2022, 30 september). A Complete Guide to Flexbox. CSS-Tricks. Geraadpleegd op 4 oktober 2022, van https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. bron 2: Walobwa, I. (2022, 21 januari). Create a responsive mobile menu with CSS. LogRocket Blog. Geraadpleegd op 4 oktober 2022, van https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
+3. bron 3:
+4. bron 4:
 
 </details>
