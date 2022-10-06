@@ -71,11 +71,8 @@ Detailpagina
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details sluit>
 <summary>uitwerken voor 1e voortgang</summary>
-<img src="images/2eDeelHomepagina" width="375px" alt="homepagina ccs schets">
-<img src="images/3eDeelHomepagina" width="375px" alt="homepagina ccs schets">
-<img src="images/4eDeelHomepagina" width="375px" alt="homepagina ccs schets">
 
 ### Stand van zaken
 Lastige HTML bij menu toggle button
@@ -88,8 +85,8 @@ Groep C1
 | Emile             | Tijn                         | Tufan        | Robin            | Yente 
 | ---               | ---                          | ---          | ---              | ---
 | (14min)           | (14 min)                     | (14min)      | (14min)          | (14min)
-| Code laten zien   | Breakdown schets controleren.|              |                  | Code laten zien + controleren
-|                   |                              | ...          | ...              | 
+| Code laten zien   | Breakdown schets controleren.| header       | breakdown        | Code laten zien + controleren
+|                   |                              |              | articles         | 
 |                   | 2 vragen over web.           |              |                  |
 
 ### Verslag van meeting
@@ -113,16 +110,19 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+<img src="images/2eDeelHomepagina" width="375px" alt="homepagina ccs schets">
+<img src="images/3eDeelHomepagina" width="375px" alt="homepagina ccs schets">
+<img src="images/4eDeelHomepagina" width="375px" alt="homepagina ccs schets">
 
 
 ### Agenda voor meeting
 Groep C1
 
-| Emile          | Tijn               | Tufan        | Robin            | Yente 
-| ---            | ---                | ---          | ---              | ---
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |css issiues oplossen
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Emile          | Tijn               | Tufan        | Robin               | Yente 
+| ---            | ---                | ---          | ---                 | ---
+| dit bespreken  | header sticky      | wann z-index toepassen    | button in nav       |css issiues oplossen
+| en dat ook nog | video als achtergrond|              | hamburger/zoekbalk  |
+| ...            | ...                | ...          | ...                 |
 
 
 ### Verslag van meeting
