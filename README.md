@@ -128,10 +128,10 @@ Groep C1
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- z-index aanpassen want er bestaat geen z-indez van -1 
+- border geven aan buttons aan hero image, border-style toevoegen. 
+- Hero image in je header weergeven i.p.v. in main.
+- 1ste section weg halen omdat daar geen h2 in zit. 
 
 </details>
 
