@@ -105,13 +105,18 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Voortgang 2 (week 3) 6-okt
 
-<details open>
+<details sluit>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-<img src="images/2eDeelHomepage width="375px" alt="homepagina ccs schets">
+Dit zijn mijn schetsen die ik van te voren heb gemaakt, waardoor het gemakkelijker was om te beginnen aan het schrijven van mijn css.  
+<p>Afbeelding 1: schets van 2e deel van homepagina.</p>
+<img src="images/2eDeelHomepage" width="375px" alt="homepagina ccs schets">
+<a herf="https://codepen.io/yentevdaart/pen/JjvBwKd">code testen in codepen voor 3e deel van home pagina</a>
+<p>Afbeelding 2: schets van 3e deel van homepagina</p>
 <img src="images/3eDeelHomepage" width="375px" alt="homepagina ccs schets">
+<a herf="https://codepen.io/yentevdaart/pen/ExLzKqG">code testen in codepen voor 4e deel van home pagina</a>
+<p>Afbeelding 3: schets van 4e deel van homepagina</p>
 <img src="images/4eDeelHomepage" width="375px" alt="homepagina ccs schets">
 
 
@@ -180,20 +185,26 @@ Op te lossen door een darkmode toggle toe te voegen op de website.
 
 ## Voortgang 3 (week 4)
 
-<details sluit>
+<details open>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Delen die goed gingen:
+- 6e deel van de pagina had ik geen schets voor nodig. <img src="images/6e deel homepagina.png" width="375px" alt="6e deel van homepagina foto">
+- Stijlen van footer in css was ook gemakkelijk. 
+Dingen die lastig waren: 
+- Carousel werkend maken in eigen code was lastig doordat ik sommigen lagen een z-index had gegeven. Er was hierdoor geen overflow waardoor de lijst elementen niet verborgen werden.
+- De language button maken en ervoor zorgen dat de overlay niet over de andere content ging bleef staan ookal was hij niet zichtbaar. <a herf="https://codepen.io/yentevdaart/pen/ZEREBvE">Test in Codepen:language button maken</a>
+had eerst geprobeert om de opacity 0 te geven wanneer de overlay niet zichtbaar moest zijn. Dit zorgde ervoor dat mijn carousels niet meer werkte. Dit heb ik uiteindelijk kunnen oplossen door display: none te gebruiken wanneer de overlay niet zichtbaar hoefde te zijn. Wanneer de button actief was, de overlay een display:block te geven. <a herf="https://codepen.io/yentevdaart/pen/yLELgxb">Test in Codepen:language button werkend maken met js.</a>
+- Dropdown in de footer van de pagina laten werken is nog steeds een lastig puntje. <a herf="https://codepen.io/yentevdaart/pen/wvXvzgJ">Link naar mijn test in Codepen</a>
 
 ### Agenda voor meeting
 Groep C1
 
 | Emile          | Tijn               | Tufan        | Robin            | Yente 
 | ---            | ---                | ---          | ---              | ---
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| dit bespreken  | en dit             | en ik dit    | en dan ik dat    | Hoe verander je twee elementen door 1 actie met js.
+| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker | Hoe bewerk ik een radio button? want input[type="radio"]:checked + label werkt niet.
 | ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting

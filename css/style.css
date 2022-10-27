@@ -19,52 +19,155 @@ header {
     display: flex; 
     position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 1;
-    
-}
-/* container logo EN  */
-header section {
-    width: 100%; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+    width:auto;
+    z-index:1;
 }
 /* logo  */
 header section img{
-   width: 5.7em;
-   padding: 1.5px;
-   margin: 0 0 0 20px;
+    width: 5.5em;
+    height: 2.2em;
+    padding: 1.5px;
+    margin: 0 0 0 10px;
+ }
+/* container EN button  */
+header section {
+    width: 100%; 
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
 }
 
-/* amerikaanse vlag  */
-header section button img {
-    width: 21px;  
-    border-radius: 50%;   
-    margin: 0 8px 0 0;;
+header section button p{
+    color:var(--white);
+    font-size: 12px;
 }
-/* EN button  */
-header section button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 0.625rem;
-    border-style: none;
+  
+  /* styling van EN button */
+  header section button{
+    width: 70px;
+    height:40px;
+    display:flex;
+    justify-content: right;
+    gap:0.5em;
+    align-items:center;
+    border-radius: 12px;
+    border: 1px solid var(--white);
+    background-color:transparent;
     padding: 8px;
     margin: 0 0 0 16px;
-}
-header section button:hover{
-    background-color: var(--green);
-    opacity: 0.2;
-}
-header section button p{
-  color:var(--black);
-}
-header section button:hover p{
-  color:rgb(0 170 0);
-}
+  }
+  /* amerikaanse vlag */
+  header section button img{
+    width: 28px;
+    height:28px;
+    border-radius:50%;
+  }
 
+  /* container van dropdown, 1ste unorderd list */
+  header section>ul {
+    width:300px;
+    height:431px;
+    padding:24px 32px;
+    border-radius:16px;
+    background-color:white;
+    list-style:none;
+    margin: 40px 0 0 0;
+
+    display: none;
+  }
+
+  /* show dropDownlist */
+  header section>ul.anders {
+    display: block;
+  }
+  /* kopjes in dropdown lijst */
+  header section>ul li p{
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: inherit;
+    
+  }
+
+  /* unorderd list in de eerste unorderd list */
+  header section>ul ul {
+   
+    list-style:none;
+    width:240px;
+    height:300px;
+    
+    overflow:scroll;
+    scroll-snap-type: y mandatory;
+      
+    scroll-behavior:smooth;
+  
+  }
+  /*align redio button met language*//*list items van 1e ul in ul, language button styling*/
+  header section>ul ul li {
+    display:flex;
+    padding:8px 0 8px 0;
+    align-items: center;
+  }
+
+  /* styling radio button region bron:https://css-tricks.com/almanac/selectors/c/checked/ */
+  /* radio button hide  */
+  header section>ul ul li input[type="radio"]{
+  opacity: 0;
+  position: fixed;
+  width: 0;
+  }
+/* selected region styling  */
+/* header section>ul ul li input[type="radio"]:checked + label {
+    color: #f00;
+    font-style: normal;
+  }  */
+  header section>ul ul li label:hover {
+    color: var(--green);
+  } 
+  /* styling images van list items 1e ul in ul */
+  header section>ul ul li img{
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    margin-right:0.5em;
+  }
+  /* itemst in label van 1e ul in ul */
+  header section>ul ul li label{
+    display:flex;
+    align-items:center;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight:100;
+    font-size: 14px;
+    color: var(--black);
+  }
+ 
+  /* 2e ul in de ul, select your language */
+  header section>ul ul:nth-of-type(2){
+    display:flex;
+    gap: 1.5em;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+      
+    scroll-behavior:smooth;
+    
+  }
+  /* styling list items van 2e ul in ul  */
+  header section>ul ul:nth-of-type(2) li{
+    display:inline-block;
+    list-style:none;
+  }
+  
+  header section:first-of-type>ul ul:nth-of-type(2) a{
+    text-decoration:none;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight:100;
+    font-size: 14px;
+  }
+  /* selected language styling  */
+  header section:first-of-type>ul ul:nth-of-type(2) a:hover{
+    color: var(--green);
+  }
 /* hamburger menu  */
 .hamb{
     cursor: pointer;
@@ -144,7 +247,6 @@ header nav{
     transition: max-height .5s ease-out;
     top:80px; 
     padding: 0 24px;
-   z-index: 2;
 
 }  
 
@@ -184,7 +286,6 @@ header nav>a{
 main{
     display: flex;
     flex-direction: column;
-    overflow-x: scroll;
 }
 
 /* hide kopje, zodat de section wel een kop heeft */
@@ -199,7 +300,6 @@ main section:first-of-type img {
     height: 100%;
     width: 100%;
     top: 0;
-    z-index: 0;
 }
 /* Ride green text   */
 main h1 {
@@ -221,11 +321,10 @@ main section:nth-of-type(2) ul{
     justify-content:center;
     align-items: center;
     gap: 0.75em;
-    margin-top: 200px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    top: 17.3em;
 }
 
 main section:nth-of-type(2) li{
@@ -257,9 +356,9 @@ main section:nth-of-type(2) li:nth-of-type(2) a{
 /* container van pagina deel 2 */
 main section:nth-of-type(3){
     background-color:var(--white);
-    margin-top:37em;
-    z-index: 0;
     margin-bottom:3.5em;
+    margin-top: 37em;
+    
  }
 /* bovenste kopjes bij elke section */
 main section h2{
@@ -270,6 +369,7 @@ main section h2{
     text-align: center;
     margin-top: 5em;
     line-height: 1.6;
+    
 }
 /* tweede kopje bij elke section */
 main section h3{
@@ -279,6 +379,7 @@ main section h3{
     color: var(--black);
     text-align: center;
     line-height: 1.6;
+    
     }
 /* container van beide vehicles opties */
 main section:nth-of-type(3) ul{
@@ -325,7 +426,6 @@ main section:nth-of-type(3) li:nth-of-type(2) a{
 /* container van pagina deel 3 */
 main section:nth-of-type(4){
     background-color:var(--gray);
-    z-index: 0;
  }
 /* style van h2 en h3 bij regel 241 tm 257 */
 /* cards met stappenplan voor app */
@@ -384,7 +484,6 @@ main section:nth-of-type(4){
 /* container van pagina deel 4 */
 main section:nth-of-type(5){
     background-color:var(--white);
-    z-index: -1;
     padding:48px 0 48px 0;
  }
 /* style van h3 bij regel 241 tm 257 */
@@ -397,6 +496,7 @@ main section:nth-of-type(5) h2{
     text-align: center;
     line-height: 1.6;
     margin-top: 0;
+    
 }
 /* carousel container */
 main section:nth-of-type(5) ul{
@@ -407,7 +507,8 @@ main section:nth-of-type(5) ul{
 	display:flex;
 	gap:0.5em;
 	
-	overflow:hidden;
+	overflow-x:scroll;
+    overflow-y:hidden;
     scroll-snap-type: x mandatory;
 	
 	scroll-behavior:smooth;
@@ -456,9 +557,7 @@ main section:nth-of-type(5) > a:first-of-type{
 /* container van pagina deel 5 */
 main section:nth-of-type(6){
     background-color:rgb(26 26 26);
-    z-index: -1;
     padding:3em 0 3em 0;
-   
  }
 
  /* kopje Lime times blog */
@@ -476,17 +575,21 @@ main section:nth-of-type(6){
 }
 /* container van alle cards */
 main section:nth-of-type(6) ul {
-display: flex;
-gap:0.5em;
-margin: 40px 0 56px 0 ;
-padding:0 1.5em 0 1.5em;
+    display: flex;
+    gap:0.5em;
+    margin: 40px 0 56px 0 ;
+    padding:0 1.5em 0 1.5em;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+
 }
 /* Card styling */
 main section:nth-of-type(6) ul li {
-list-style: none;
-background-color: var(--black);
-border-radius:15px;
-width: 19.938em;
+    list-style: none;
+    background-color: var(--black);
+    border-radius:15px;
+    width: 19.938em;
 }
 /* tekst op cards styling */
 main section:nth-of-type(6) ul li p{
@@ -527,10 +630,9 @@ main section:nth-of-type(6) > a {
 /* container van pagina deel 6 */
 main section:nth-of-type(7){
     background-color:rgb(24 24 24);
-    z-index: -1;
     padding:7em 0 6em 0;
 }
-/* positie en grootte van image  */
+/* positie en grootte van mobile image  */
 main section:nth-of-type(7) > img{
 width: 279px;
 height: auto;
@@ -545,6 +647,7 @@ main section:nth-of-type(7) h2{
     color: var(--white);
     text-align: left;
     margin-left: 1.25em;
+    margin-top: 1.25em;
 }
 /* container van afbeeldingen */
 main section:nth-of-type(7) ul{
@@ -555,11 +658,11 @@ main section:nth-of-type(7) ul{
     margin-top: 1.25em;
     margin-left: 1.25em;
 }
-/* grotte eerste image  */
+/* grotte eerste image, app store */
 main section:nth-of-type(7) ul li:first-of-type img{
     height: 50px;
 }
-/* grootte tweede image  */
+/* grootte tweede image, play store */
 main section:nth-of-type(7) ul li:nth-of-type(2) img{
     width:190px;
 }
@@ -619,12 +722,11 @@ footer nav>ul li ul:first-of-type {
   /* 2e ul in eerste li van nav direct child*//*lijst laten zien door display none te verwijderen*/
 footer nav>ul li ul:nth-of-type(2){
     width:327px;
-    height:190.38px;
+    height: auto;
     padding: 1.5em 0 1.5em;
     display:flex;
     flex-direction:column;
     gap:1em;
-    display: none;
   }
   /* styling van uitgeklapte lijst */
 footer nav>ul li ul:nth-of-type(2) a{
@@ -634,6 +736,11 @@ footer nav>ul li ul:nth-of-type(2) a{
     font-size:16px;
     color:gray;
     text-decoration:none;
+  }
+
+/*hide van lijst*/
+nav>ul li ul:nth-of-type(2) li{
+    display:none;
   }
 /* hoofdkopjes in nav  */
 footer nav>ul:first-of-type li p, footer nav>ul:first-of-type li a{
@@ -667,6 +774,7 @@ footer nav>ul:nth-of-type(3){
     list-style:none;
     gap: 1em;
 }
+
 /* stijlen van list items  */
 footer nav>ul:nth-of-type(3) li{
     font-family: Poppins, Helvetica, sans-serif;
