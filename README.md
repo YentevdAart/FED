@@ -189,10 +189,10 @@ Op te lossen door een darkmode toggle toe te voegen op de website.
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-Delen die goed gingen:
+<p>Delen die goed gingen:</p>
 - 6e deel van de pagina had ik geen schets voor nodig. <img src="images/6e deel homepagina.png" width="375px" alt="6e deel van homepagina foto">
 - Stijlen van footer in css was ook gemakkelijk. 
-Dingen die lastig waren: 
+<p> Dingen die lastig waren: </p>
 - Carousel werkend maken in eigen code was lastig doordat ik sommigen lagen een z-index had gegeven. Er was hierdoor geen overflow waardoor de lijst elementen niet verborgen werden.
 - De language button maken en ervoor zorgen dat de overlay niet over de andere content ging bleef staan ookal was hij niet zichtbaar. <a herf="https://codepen.io/yentevdaart/pen/ZEREBvE">Test in Codepen:language button maken</a>
 had eerst geprobeert om de opacity 0 te geven wanneer de overlay niet zichtbaar moest zijn. Dit zorgde ervoor dat mijn carousels niet meer werkte. Dit heb ik uiteindelijk kunnen oplossen door display: none te gebruiken wanneer de overlay niet zichtbaar hoefde te zijn. Wanneer de button actief was, de overlay een display:block te geven. <a herf="https://codepen.io/yentevdaart/pen/yLELgxb">Test in Codepen:language button werkend maken met js.</a>
@@ -203,16 +203,16 @@ Groep C1
 
 | Emile          | Tijn               | Tufan        | Robin            | Yente 
 | ---            | ---                | ---          | ---              | ---
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    | Hoe verander je twee elementen door 1 actie met js.
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker | Hoe bewerk ik een radio button? want input[type="radio"]:checked + label werkt niet.
+| dit bespreken  | detail pagina breakdown          | en ik dit    | en dan ik dat    | Hoe verander je twee elementen door 1 actie met js.
+| en dat ook nog |                    | nog een punt | dit wil ik zeker | Hoe bewerk ik een radio button? want input[type="radio"]:checked + label werkt niet.
 | ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- html smooth scroling 
+- id geven aan radio buttons, input checked = automatisch 1 geselecteerd, br weghalen bij labels door display:block;
+- footer aanpassen met button voor span
 - ...
 
 </details>
@@ -248,7 +248,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. bron 1: Coyier, C. (2022, 30 september). A Complete Guide to Flexbox. CSS-Tricks. Geraadpleegd op 4 oktober 2022, van https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 2. bron 2: Walobwa, I. (2022, 21 januari). Create a responsive mobile menu with CSS. LogRocket Blog. Geraadpleegd op 4 oktober 2022, van https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
-3. bron 3:
+3. bron 3:Coyier, C. (2022b, oktober 11). A Complete Guide to Flexbox. CSS-Tricks. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 4. bron 4:
 
 </details>

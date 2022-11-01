@@ -109,7 +109,7 @@ header section button p{
     align-items: center;
   }
 
-  /* styling radio button region bron:https://css-tricks.com/almanac/selectors/c/checked/ */
+  /* styling radio button region */
   /* radio button hide  */
   header section>ul ul li input[type="radio"]{
   opacity: 0;
@@ -117,12 +117,11 @@ header section button p{
   width: 0;
   }
 /* selected region styling  */
-/* header section>ul ul li input[type="radio"]:checked + label {
-    color: #f00;
-    font-style: normal;
-  }  */
-  header section>ul ul li label:hover {
+header section>ul ul li input[type="radio"]:checked + label {
     color: var(--green);
+  } 
+header section>ul ul li label {
+   display:block;
   } 
   /* styling images van list items 1e ul in ul */
   header section>ul ul li img{
@@ -282,6 +281,10 @@ header nav>a{
     text-decoration: none;
     font-family: Poppins, Helvetica, sans-serif;
 }
+/*responsive menu*/
+@media (min-width: 1024px){
+}
+
 /* page wrapper */
 main{
     display: flex;
@@ -689,68 +692,72 @@ footer nav>a img{
     margin-bottom:3.5em ;
 }
 
-  /* direct cild nav container */
-footer nav>ul{
+  /* container van 1e nav deel*/
+footer nav>ul:first-of-type{
   width: 20.438em;
   height: auto;
   margin-top: 1.5em;
   list-style:none;
-  
   }
-  /* p in eerste ul in eerste li van nav direct child */
-footer nav>ul li ul:first-of-type p{
-  font-size: 30px;
-  font-family: Poppins, Helvetica, sans-serif;
-  font-weight: 200;
-  color: white;
-  }
-  /* container van hoofdkopje en pijl *//* eerste ul in eerste li van nav direct child*/
-footer nav>ul li ul:first-of-type {
+
+  /* container van paragraaf en pijl */
+footer nav>ul:first-of-type li div{
     display:flex;
     align-items:center;
     justify-content:space-between;
   }
-  /* pijl up*/
+  /* button pijl*/
 .arrow{
    border: solid white;
    border-width: 0 2px 2px 0;
    display: inline-block;
    padding: 4px;
+   background-color:transparent;
    transform: rotate(-135deg);
+   
   }
-  
-  /* 2e ul in eerste li van nav direct child*//*lijst laten zien door display none te verwijderen*/
-footer nav>ul li ul:nth-of-type(2){
+.show{
+    transform: rotate(45deg);
+	transition: 0.5s;
+
+}
+/*uitgeklapte lijst*/ /*lijst laten zien door display none te verwijderen*/
+footer nav>ul:first-of-type li ul{
     width:327px;
     height: auto;
-    padding: 1.5em 0 1.5em;
     display:flex;
     flex-direction:column;
     gap:1em;
   }
-  /* styling van uitgeklapte lijst */
-footer nav>ul li ul:nth-of-type(2) a{
+  /* styling van linkjes in uitgeklapte lijst */
+footer nav>ul:first-of-type li ul li a{
     list-style:none;
     font-family: Poppins, Helvetica, sans-serif;
     font-weight: 200;
     font-size:16px;
     color:gray;
     text-decoration:none;
-  }
+}
 
 /*hide van lijst*/
-nav>ul li ul:nth-of-type(2) li{
+footer nav>ul:first-of-type li ul.show{
     display:none;
   }
-/* hoofdkopjes in nav  */
-footer nav>ul:first-of-type li p, footer nav>ul:first-of-type li a{
+
+footer nav>ul:first-of-type>li{
+    padding: 0 0 1.5em;
+}
+
+/* hoofdkopjes in 1e deel van nav  */
+footer nav>ul li div p, 
+footer nav>ul:first-of-type li a{
 font-size: 30px;
 font-family: Poppins, Helvetica, sans-serif;
 font-weight: 200;
 color: var(--white);
 text-decoration: none;
-
 }
+
 
 /* social media images style  */
 footer nav>ul:nth-of-type(2) li a img{
@@ -764,6 +771,7 @@ footer nav>p {
     font-family: Poppins, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 12px;
+    padding: 0 0 25px ;
 }
 /* linkjes cluster onderaan de pagina container  *//* 3e ul in nav*/
 footer nav>ul:nth-of-type(3){
