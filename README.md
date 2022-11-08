@@ -58,7 +58,7 @@ Detailpagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de homepagina: 
-<img src="images/breakdown-schets-homePagina-mobiel.png" width="375px" alt="breakdown van de homepagina">
+<img src="images/breakdown-schets-homepagina-mobiel.png" width="375px" alt="breakdown van de homepagina">
 
 ### detailpagina: 
 <img src="images/breakdown-schets-detailPagina-mobiel.png" width="375px" alt="breakdown van de blogpagina">
@@ -111,13 +111,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 Dit zijn mijn schetsen die ik van te voren heb gemaakt, waardoor het gemakkelijker was om te beginnen aan het schrijven van mijn css.  
 <p>Afbeelding 1: schets van 2e deel van homepagina.</p>
-<img src="images/2eDeelHomepage.JPG" width="375px" alt="homepagina ccs schets">
+<img src="images/2eDeelHomepagina.JPG" width="375px" alt="homepagina ccs schets">
 [code testen in codepen voor 3e deel van home pagina](https://codepen.io/yentevdaart/pen/JjvBwKd)
 <p>Afbeelding 2: schets van 3e deel van homepagina</p>
-<img src="images/3eDeelHomepage.JPG" width="375px" alt="homepagina ccs schets">
+<img src="images/3eDeelHomepagina.JPG" width="375px" alt="homepagina ccs schets">
 [code testen in codepen voor 4e deel van home pagina](https://codepen.io/yentevdaart/pen/ExLzKqG)
 <p>Afbeelding 3: schets van 4e deel van homepagina</p>
-<img src="images/4eDeelHomepage.JPG" width="375px" alt="homepagina ccs schets">
+<img src="images/4eDeelHomepagina.JPG" width="375px" alt="homepagina ccs schets">
 
 
 ### Agenda voor meeting
@@ -162,7 +162,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 Op te lossen door het vergroten van lettertype.
 
 #### CTA niet goed te gebruiken op mobile versie 
-<img src="images/CTAhiding.png" width="375px" alt="call to action te dicht op elkaar ">
+<img src="images/buttonDichtOpelkaar.png" width="375px" alt="call to action te dicht op elkaar ">
 
 Op te lossen door de call to action button onder elkaar te zetten en groter te maken.
 Te zien in mijn eind resultaat:
