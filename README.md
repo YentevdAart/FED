@@ -236,13 +236,13 @@ hier screenshot(s) van je eindresultaat
 <img src="images/MobileResultaatHomepagina.png" width="375px" alt="Lime homepagina">
 <img src="images/MobileResultaatDetailPagina.png" width="375px" alt="Lime blogpagina">
 
+Desktop resultaten
+<img src="images/DesktopHomepageEindresultaat.png" width="375px" alt="Lime homepagina">
+<img src="images/DesktopDetailPaginaResultaat.png" width="375px" alt="Lime detailpagina">
 
 </details>
 
-<details sluit> Desktop resultaten
-<img src="images/DesktopHomepaginaEindresultaat.png" width="375px" alt="Lime homepagina">
-<img src="images/DesktopDetailPaginaResultaat.png" width="375px" alt="Lime homepagina">
-</details>
+
 
 ## Bronnenlijst
 
