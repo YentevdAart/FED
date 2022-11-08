@@ -1,0 +1,166 @@
+/* CSS Document */
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+  box-sizing:border-box;  
+}
+/* variables*/
+:root{
+    --white: rgb(255 255 255);
+    --black: rgb(0 0 0);
+    --gray: rgb(238 238 238);
+    --green: rgb(0 221 0);
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+main{
+    width: auto;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+/* filter button */
+main button {
+border: none;
+background-color: transparent;
+}
+
+main button img {
+    width:20px;
+    height:auto;
+    margin:1.5em 0 0 1.5em;
+}
+/* Dropdown list filter */
+/* Dropdown list countainer */
+main ul:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    height: 0;
+    gap:0.5em;
+    align-items: center;
+    scale: 0;
+    transition-duration: .5s;
+}
+
+/* show or hide filters */
+main ul:first-of-type.see{
+scale: 1;
+width: 80%;
+height: 18.023em;
+margin: 0 1.25em ;
+}
+
+/* Dropdown list list items */
+main ul:first-of-type li {
+    list-style: none;
+    padding: 0.375em 1.5em;
+    background-color: var(--gray);
+    border-radius: 25px;
+    border: 1px solid var(--gray);
+}
+main ul:first-of-type li:hover{
+    background-color: var(--green);
+}
+/* Dropdown linkjes */
+main ul:first-of-type li a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: Poppins, Helvetica, sans-serif;
+   font-weight: 200;
+   font-size: 0.75em;
+}
+@media (min-width: 1024px){ main ul:first-of-type li a{
+    font-size: 1em;
+
+}}
+/* container van alle cards */
+main ul:nth-of-type(2) {
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5em;
+    margin: 40px 0 0 0 ;
+    padding:0 1.5em 0 1.5em;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+@media (min-width: 1024px){ main ul:nth-of-type(2) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}}
+/* Card styling */
+main ul:nth-of-type(2) li {
+    list-style: none;
+    background-color: var(--black);
+    border-radius:15px;
+    width: 19.938em;
+}
+@media (min-width: 1024px){ main ul:nth-of-type(2) li {
+    height: auto;
+    width: 22em;
+}}
+/* tekst op cards styling */
+main ul:nth-of-type(2) li p{
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    color: var(--white);
+    padding:36px 48px 44px;
+}
+
+@media (min-width: 1024px){ main ul:nth-of-type(2) li p {
+    font-size: 1.2em;
+}}
+/* foto's op card styling  */
+main ul:nth-of-type(2) li img{
+    width: 19.938em;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+@media (min-width: 1024px){ main ul:nth-of-type(2) li img {
+    height: auto;
+    width: 22em;
+}}
+/* pijlen op cards styling  */
+main ul:nth-of-type(2) li img:nth-of-type(2){
+   width: 1.875em;
+   height: 1.875em;
+   padding: 10px;
+   margin:0 0 1.7em 3em;
+   border-radius: 50%;
+   border: 0.5px solid white;
+}
+@media (min-width: 1024px){ main ul:nth-of-type(2) li img:nth-of-type(2){
+    height: 2em;
+    width: 2em;
+}}
+/* view more button styling  */
+main div a {
+   padding: 10px 24px 10px 24px;
+   background-color: var(--black);
+   font-family: Poppins, Helvetica, sans-serif;
+   font-weight: 200;
+   font-size: 0.75em;
+   color: var(--white);
+   text-decoration: none;
+   border-radius: 25px;
+   border: 1px solid var(--black);
+   margin-top: 2.5em;
+   margin-bottom: 5em;
+}
+@media (min-width: 1024px){ main div a{
+    font-size:1em;
+}}
+
+/* centreren van view more button  */
+main div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+

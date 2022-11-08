@@ -92,9 +92,9 @@ Groep C1
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- Maak van language button een lijst met radio buttons.
+- 
+- 
 - ...
 
 </details>
@@ -112,10 +112,10 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 Dit zijn mijn schetsen die ik van te voren heb gemaakt, waardoor het gemakkelijker was om te beginnen aan het schrijven van mijn css.  
 <p>Afbeelding 1: schets van 2e deel van homepagina.</p>
 <img src="images/2eDeelHomepage" width="375px" alt="homepagina ccs schets">
-<a herf="https://codepen.io/yentevdaart/pen/JjvBwKd">code testen in codepen voor 3e deel van home pagina</a>
+[code testen in codepen voor 3e deel van home pagina](https://codepen.io/yentevdaart/pen/JjvBwKd)
 <p>Afbeelding 2: schets van 3e deel van homepagina</p>
 <img src="images/3eDeelHomepage" width="375px" alt="homepagina ccs schets">
-<a herf="https://codepen.io/yentevdaart/pen/ExLzKqG">code testen in codepen voor 4e deel van home pagina</a>
+[code testen in codepen voor 4e deel van home pagina](https://codepen.io/yentevdaart/pen/ExLzKqG)
 <p>Afbeelding 3: schets van 4e deel van homepagina</p>
 <img src="images/4eDeelHomepage" width="375px" alt="homepagina ccs schets">
 
@@ -161,17 +161,18 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 #### Te kleine tekst
 Op te lossen door het vergroten van lettertype.
 
-#### CTA slecht zichtbaar 
-<img src="images/CTAhiding.png" alt="call to action verborgen in achtergrond image">
+#### CTA niet goed te gebruiken op mobile versie 
+<img src="images/CTAhiding.png" width="375px" alt="call to action te dicht op elkaar ">
 
-Op te lossen door de call to action button een kleur te geven.
-
+Op te lossen door de call to action button onder elkaar te zetten en groter te maken.
+Te zien in mijn eind resultaat:
+<img src="images/buttonsOnderElkaar" width="375px" alt="call to action verbeterd ">
 
 #### Hover kleur te klein verschil 
-<img src="images/HoverTinyDiffrence.png" alt="hover kleur is 1 tint donkerder">
-
+<img src="images/HoverTinyDiffrence.png" width="375px" alt="hover kleur is 1 tint donkerder">
+<img src="images/CTA hover orgineel.png" width="375px" alt="hover kleur is 1 tint donkerder">
 Op te lossen door de huidige hover kleur te verplaatsen met een donker grijze hovekleur. 
-
+In mijn versie: <img src="images/CTA hover .png" width="375px" alt="hover kleur is donkerder">
 
 #### Geen darkmode. 
 
@@ -185,7 +186,7 @@ Op te lossen door een darkmode toggle toe te voegen op de website.
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details sluit>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
@@ -194,9 +195,9 @@ Op te lossen door een darkmode toggle toe te voegen op de website.
 - Stijlen van footer in css was ook gemakkelijk. 
 <p> Dingen die lastig waren: </p>
 - Carousel werkend maken in eigen code was lastig doordat ik sommigen lagen een z-index had gegeven. Er was hierdoor geen overflow waardoor de lijst elementen niet verborgen werden.
-- De language button maken en ervoor zorgen dat de overlay niet over de andere content ging bleef staan ookal was hij niet zichtbaar. <a herf="https://codepen.io/yentevdaart/pen/ZEREBvE">Test in Codepen:language button maken</a>
-had eerst geprobeert om de opacity 0 te geven wanneer de overlay niet zichtbaar moest zijn. Dit zorgde ervoor dat mijn carousels niet meer werkte. Dit heb ik uiteindelijk kunnen oplossen door display: none te gebruiken wanneer de overlay niet zichtbaar hoefde te zijn. Wanneer de button actief was, de overlay een display:block te geven. <a herf="https://codepen.io/yentevdaart/pen/yLELgxb">Test in Codepen:language button werkend maken met js.</a>
-- Dropdown in de footer van de pagina laten werken is nog steeds een lastig puntje. <a herf="https://codepen.io/yentevdaart/pen/wvXvzgJ">Link naar mijn test in Codepen</a>
+- De language button maken en ervoor zorgen dat de overlay niet over de andere content ging bleef staan ookal was hij niet zichtbaar. [Test in Codepen:language button maken](https://codepen.io/yentevdaart/pen/ZEREBvE)
+had eerst geprobeert om de opacity 0 te geven wanneer de overlay niet zichtbaar moest zijn. Dit zorgde ervoor dat mijn carousels niet meer werkte. Dit heb ik uiteindelijk kunnen oplossen door display: none te gebruiken wanneer de overlay niet zichtbaar hoefde te zijn. Wanneer de button actief was, de overlay een display:block te geven. [Test in Codepen:language button werkend maken met js.](https://codepen.io/yentevdaart/pen/yLELgxb")
+- Dropdown in de footer van de pagina laten werken is nog steeds een lastig puntje. [Link naar mijn test in Codepen](https://codepen.io/yentevdaart/pen/wvXvzgJ")
 
 ### Agenda voor meeting
 Groep C1
@@ -223,21 +224,25 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb de laaste week vooral gewerkt aan het responsive maken van mijn website. 
 
 ### Screenshot(s)
 
 hier screenshot(s) van je eindresultaat
+<img src="images/MobileResultaatHomepagina.png" width="375px" alt="Lime homepagina">
+<img src="images/MobileResultaatDetailPagina.png" width="375px" alt="Lime blogpagina">
+
 
 </details>
 
-
-
-
+<details sluit> Desktop resultaten
+<img src="images/DesktopHomepaginaEindresultaat.png" width="375px" alt="Lime homepagina">
+<img src="images/DesktopDetailPaginaResultaat.png" width="375px" alt="Lime homepagina">
+</details>
 
 ## Bronnenlijst
 
@@ -246,9 +251,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1: Coyier, C. (2022, 30 september). A Complete Guide to Flexbox. CSS-Tricks. Geraadpleegd op 4 oktober 2022, van https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-2. bron 2: Walobwa, I. (2022, 21 januari). Create a responsive mobile menu with CSS. LogRocket Blog. Geraadpleegd op 4 oktober 2022, van https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
-3. bron 3:Coyier, C. (2022b, oktober 11). A Complete Guide to Flexbox. CSS-Tricks. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-4. bron 4:
+1. bron 1: Coyier, C. (2022, 30 september). A Complete Guide to Flexbox. CSS-Tricks. Geraadpleegd op 4 oktober 2022, van [link naar bron](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+2. bron 2: Walobwa, I. (2022, 21 januari). Create a responsive mobile menu with CSS. LogRocket Blog. Geraadpleegd op 4 oktober 2022, van [link naar bron](https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/)
+3. bron 3:Coyier, C. (2022b, oktober 11). A Complete Guide to Flexbox. CSS-Tricks. [link naar bron](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+4. bron 4:Galante, A. (2022, 19 oktober). A Complete Guide to CSS Media Queries. CSS-Tricks. [link naar bron](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
 
 </details>

@@ -31,17 +31,19 @@ deDerdePee.addEventListener("click", revealThird);
 function revealFirst(){
 var deLijst = document.querySelector("footer nav>ul li:first-of-type ul");
   deLijst.classList.toggle("show");
-// alert("Hello! I am an alert box!");
+
 }
 function revealSecond(){
     var deLijst = document.querySelector("footer nav>ul li:nth-of-type(2) ul");
       deLijst.classList.toggle("show");
-    // alert("Hello! I am an alert box!");
+
     }
 
 function revealThird(){
         var deLijst = document.querySelector("footer nav>ul li:nth-of-type(3) ul");
           deLijst.classList.toggle("show");
-        // alert("Hello! I am an alert box!");
+
         }
-    
+
+
+

@@ -21,7 +21,9 @@ header {
     top: 0;
     width:auto;
     z-index:1;
+    background-color:  rgba(0,0,0,.5);
 }
+
 /* logo  */
 header section img{
     width: 5.5em;
@@ -70,10 +72,9 @@ header section button p{
     height:431px;
     padding:24px 32px;
     border-radius:16px;
-    background-color:white;
+    background-color:var(--white);
     list-style:none;
     margin: 40px 0 0 0;
-
     display: none;
   }
 
@@ -167,19 +168,13 @@ header section>ul ul li label {
   header section:first-of-type>ul ul:nth-of-type(2) a:hover{
     color: var(--green);
   }
+  
 /* hamburger menu  */
 .hamb{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
     margin: 0 16px 0 0;
-}
- /* Style span tag */
- .hamb{
-    cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-    
 }
 
 .hamb-line {
@@ -246,13 +241,12 @@ header nav{
     transition: max-height .5s ease-out;
     top:80px; 
     padding: 0 24px;
-
 }  
 
 header nav ul{
     list-style: none;
     font-family: Poppins, Helvetica, sans-serif;
-    font-size: 1.875em;;
+    font-size: 1.875em;
   
 }
 header nav ul li a{
@@ -260,18 +254,32 @@ header nav ul li a{
     list-style: none;
     text-decoration: none;
     display: block;
-    padding: 0 24px 0 0;
-    margin-top: 20px;
+    padding: 0 1.5em 0 0;
+    margin-top: 1.25em;
     color: var(--black);
 }
 header nav ul li a:hover{
     background-color: var(--gray);
+    border-bottom: 1px solid var(--gray);
+    transition: .5s;
 }
+
+@media (min-width: 1024px){.side-menu:checked ~ nav{
+   background-color: transparent;
+   max-height: none;
+}
+}
+
+@media (max-height: 375px){header nav ul{
+    font-size: 1em;
+ }
+ }
+/* download button  */
 header nav>a{
     width: auto;
     position:absolute;
-    margin-top: 159.805px;
-    margin-bottom: 48px;
+    margin-top: 9.988em;
+    margin-bottom: 3em;
     padding: 10px 24px;
     background-color: var(--green);
     font-size: 12px;
@@ -281,400 +289,76 @@ header nav>a{
     text-decoration: none;
     font-family: Poppins, Helvetica, sans-serif;
 }
+@media (max-height: 375px){header nav>a{
+    margin-top: 1em;
+ }
+ }
 /*responsive menu*/
-@media (min-width: 1024px){
+@media (min-width: 1024px){ header nav>a {
+width: 11em;
+position: relative;
+left: auto;
+padding: 12px 24px;
+font-size: 14px;
+margin: 1.25em 0 0 0 ;
+}
+}
+@media (min-width: 1024px){ header nav{
+    width: auto;
+    display: flex;
+    position:relative;
+    top: 1.5em;
+    overflow: visible;
+    align-items: center;
+    justify-content: space-between;
+}
 }
 
-/* page wrapper */
-main{
-    display: flex;
-    flex-direction: column;
+/* hide hamburger menu icon  */
+@media (min-width: 1024px){ .hamb{
+position: absolute;
+margin-left: -9999px ;
+
+}
 }
 
-/* hide kopje, zodat de section wel een kop heeft */
-main section:first-of-type h1{
-    display: none;
-}
-/*achtergrond hero img*/
-main section:first-of-type img {
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-    width: 100%;
-    top: 0;
-}
-/* Ride green text   */
-main h1 {
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight:100;
-    font-size: 1.875em;
-    color: var(--white);
-    position:absolute;
-    top: 7.2em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/* container content op hero img */
-/* positie van buttons */
-main section:nth-of-type(2) ul{
-    width: 400px;
+@media (min-width: 1024px){ header nav ul{
+    height: 7em;
+    width: 19.8em;
     display: flex;
+    gap: 1em;
     flex-direction: row;
-    justify-content:center;
+    left:10.7em;
     align-items: center;
-    gap: 0.75em;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 17.3em;
+}
 }
 
-main section:nth-of-type(2) li{
-    list-style: none;
-}
 
-main section:nth-of-type(2) li a{
-    align-items: center;
-    text-decoration: none;
-    border-radius: 25px;
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight:100;
-    font-size: 0.75em;
-}
-main section:nth-of-type(2) li:nth-of-type(1) a{
-    color: var(--white);
-    border:1px solid var(--white);
-    padding: 10px 20px 10px 20px;
-}
-
-main section:nth-of-type(2) li:nth-of-type(2) a{
-    color: var(--black);
-    border:1px solid var(--green);
-    background-color: var(--green);
-    padding: 10px 25px 10px 25px;
-}
-
-/* 2e deel van pagina (derde section) */
-/* container van pagina deel 2 */
-main section:nth-of-type(3){
-    background-color:var(--white);
-    margin-bottom:3.5em;
-    margin-top: 37em;
-    
- }
-/* bovenste kopjes bij elke section */
-main section h2{
-    font-size: 1em;
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight: 400;
-    color: var(--green);
-    text-align: center;
-    margin-top: 5em;
-    line-height: 1.6;
-    
-}
-/* tweede kopje bij elke section */
-main section h3{
-    font-size:1.875em;
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight:400;
-    color: var(--black);
-    text-align: center;
-    line-height: 1.6;
-    
-    }
-/* container van beide vehicles opties */
-main section:nth-of-type(3) ul{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 40px 0 0 0;
-    gap: 10px;
-    align-items: center;
+@media (min-width: 1024px){ header nav ul li a{
+color: var(--white);
+font-size: 16px;
 
 }
-/* containers van 1 vehicles optie */
-main section:nth-of-type(3) li{
-    width: 20.4em;
-    background-color: var(--gray);
-    border-radius: 20px;
-    list-style: none;
-    
-}
-/* afbeeldingen van vehicles opties */
-main section:nth-of-type(3) li img{
-    width: 8em;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 20px;
 }
 
-/* linkjes naar soort vehicle + kopje */
-main section:nth-of-type(3) a{
-    align-items: center;
-    text-decoration: none;
-    color: var(--black);
-    font-size: 1.28em;
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight:200;
-}
-
-/* kopje eletric bike align maken met kopje electric scooter */
-main section:nth-of-type(3) li:nth-of-type(2) a{
-    margin-left: 5px;
-}
-
-/* 3e deel van pagina (vierde section) */
-/* container van pagina deel 3 */
-main section:nth-of-type(4){
-    background-color:var(--gray);
- }
-/* style van h2 en h3 bij regel 241 tm 257 */
-/* cards met stappenplan voor app */
- main section:nth-of-type(4) ul{
-    width: auto;
-    margin-top: 2.5em;
-	padding:0;
-    list-style:none;
-    display:flex;
-    flex-direction:column; 
-    gap: 0.5em;
-    align-items: center;
-    margin-bottom:3.5em;
- }
-/* uiterlijk van elke img in de cards */
- main section:nth-of-type(4) ul li img{
-    width: 20.438em;
-    border-radius: 15px 15px 0 0;
-    text-decoration: none;
-    grid-column-start:1;
-    grid-column-end:-1;
- }
-/* grid container voor cards  */
- main section:nth-of-type(4) ul li{
-    width: 20.438em;
-    background-color: var(--white);
-    border-radius: 15px;
-    list-style: none;
-    align-items: center;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;  
- }
- /* padding aan tekst gedeelte van de cards */
- main section:nth-of-type(4) ul li h4 + p {
-    padding: 1.5em;
- }
- /* stap van how to use (in de cards) */
- main section:nth-of-type(4) ul li h4{
-    color: var(--green);
-    font-family: Poppins, Helvetica, sans-serif;
-    font-size: 1em;
-    font-weight:200;
-    margin-left: 1em;
- }
- /* uitleg how to use (in de cards) */
- main section:nth-of-type(4) ul li p{
-    grid-column-start:2;
-    grid-column-end:5;
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 0.75em;
-    color: var(--black);
-    margin-left: 2em;
- }
-/* 4e deel van pagina (vijfde section) */
-/* container van pagina deel 4 */
-main section:nth-of-type(5){
-    background-color:var(--white);
-    padding:48px 0 48px 0;
- }
-/* style van h3 bij regel 241 tm 257 */
-/* h2 van section 5 heeft andere margin-top */
-main section:nth-of-type(5) h2{
-    font-size: 1em;
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight: 400;
-    color: var(--green);
-    text-align: center;
-    line-height: 1.6;
-    margin-top: 0;
-    
-}
-/* carousel container */
-main section:nth-of-type(5) ul{
-    margin: 40px 0 20px 0 ;
-	padding:0 1.5em 0 1.5em;
-	list-style:none;
-	
-	display:flex;
-	gap:0.5em;
-	
-	overflow-x:scroll;
-    overflow-y:hidden;
-    scroll-snap-type: x mandatory;
-	
-	scroll-behavior:smooth;
-}
-/* container van elke card */
-main section:nth-last-of-type(5) ul li{ 
-    flex-shrink:0;
-	scroll-snap-align: center;
-}
-
-main section:nth-of-type(5) ul li > a{
-    display: none;
-}
-
-main section:nth-of-type(5) ul li img{
-    width: 19.938em;
-    height: auto;
-    border-radius: 15px;
-    text-decoration: none;
-}
-
-main section:nth-of-type(5) ul li p{
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 1em;
-    margin: 12px 0 0 0 ;
-}
-/* dots to move carousel */
-main section:nth-of-type(5) a{
-    
-    display:inline-block;
-	width:0.625em;
-	height:0.625em;
-	border-radius:50%;
-	margin:0.375em;
-	background-color:var(--gray);
-	overflow:hidden;
-	color:transparent;
+@media (min-width: 1024px){ header>a{
+top: 0;
+left: 2.375em;
 
 }
-main section:nth-of-type(5) > a:first-of-type{
-    margin-left: 50%;
 }
-
-/* 5e deel van pagina (zesde section) */
-/* container van pagina deel 5 */
-main section:nth-of-type(6){
-    background-color:rgb(26 26 26);
-    padding:3em 0 3em 0;
- }
-
- /* kopje Lime times blog */
- main section:nth-of-type(6) h2{
-    margin: 1.5em 0 0 0 ;
- }
-/* kopje our latest news */
- main section:nth-of-type(6) h3{
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight: 100;
-    color: var(--white);
-    text-align: center;
-    line-height: 1.6;
-    margin: 4px 0 0 0;
-}
-/* container van alle cards */
-main section:nth-of-type(6) ul {
-    display: flex;
-    gap:0.5em;
-    margin: 40px 0 56px 0 ;
-    padding:0 1.5em 0 1.5em;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    overflow-x: auto;
-
-}
-/* Card styling */
-main section:nth-of-type(6) ul li {
-    list-style: none;
-    background-color: var(--black);
-    border-radius:15px;
-    width: 19.938em;
-}
-/* tekst op cards styling */
-main section:nth-of-type(6) ul li p{
-    font-family: Poppins, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 1em;
-    color: var(--white);
-    padding:36px 48px 44px;
-}
-/* foto's op card styling  */
-main section:nth-of-type(6) ul li img{
-    width: 19.938em;
-    height: auto;
-    border-radius: 15px 15px 0 0;
-}
-/* pijlen op cards styling  */
-main section:nth-of-type(6) ul li img:nth-of-type(2){
-   width: 30px;
-   height: 30px;
-   padding: 10px;
-   margin:0 0 1.7em 3em;
-   border-radius: 50%;
-   border: 0.5px solid white;
-}
-/* view more button styling  */
-main section:nth-of-type(6) > a {
-   padding: 10px 24px 10px 24px;
-   background-color: var(--green);
-   font-family: Poppins, Helvetica, sans-serif;
-   font-weight: 200;
-   font-size: 12px;
-   color: var(--white);
-   text-decoration: none;
-   border-radius: 25px;
-}
-
-/* 6e deel van pagina (zevende section) */
-/* container van pagina deel 6 */
-main section:nth-of-type(7){
-    background-color:rgb(24 24 24);
-    padding:7em 0 6em 0;
-}
-/* positie en grootte van mobile image  */
-main section:nth-of-type(7) > img{
-width: 279px;
-height: auto;
-
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
-/* verandering van h2 styling  */
-main section:nth-of-type(7) h2{
-    font-size: 30px;
-    color: var(--white);
-    text-align: left;
-    margin-left: 1.25em;
-    margin-top: 1.25em;
-}
-/* container van afbeeldingen */
-main section:nth-of-type(7) ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 0.5em;
-    margin-top: 1.25em;
-    margin-left: 1.25em;
-}
-/* grotte eerste image, app store */
-main section:nth-of-type(7) ul li:first-of-type img{
-    height: 50px;
-}
-/* grootte tweede image, play store */
-main section:nth-of-type(7) ul li:nth-of-type(2) img{
-    width:190px;
-}
-
 /* footer container */
 footer{
     background-color:var(--black);
     padding: 4em 1.5em 2.5em 1.5em;
 }
+
+@media (min-width: 1024px){ footer nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}}
 
 /* container 2e ul in nav  */
 footer nav>ul:nth-of-type(2){
@@ -691,21 +375,35 @@ footer nav>a img{
     height:2.133em;
     margin-bottom:3.5em ;
 }
+@media (min-width: 1024px){ footer nav>a{
+    width: 10em;
+    height: auto; 
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 0;
+    padding: 0;
+}}
 
   /* container van 1e nav deel*/
 footer nav>ul:first-of-type{
-  width: 20.438em;
+  width: auto;
   height: auto;
   margin-top: 1.5em;
   list-style:none;
   }
-
+@media (min-width: 1024px){ footer nav>ul{
+display: flex;
+  }}
   /* container van paragraaf en pijl */
 footer nav>ul:first-of-type li div{
     display:flex;
     align-items:center;
     justify-content:space-between;
+    padding: 0 1.25em 0 0;
   }
+  @media (min-width: 1024px){ footer nav>ul li {
+    padding: 0;
+     }}
   /* button pijl*/
 .arrow{
    border: solid white;
@@ -714,13 +412,20 @@ footer nav>ul:first-of-type li div{
    padding: 4px;
    background-color:transparent;
    transform: rotate(-135deg);
-   
   }
-.show{
+  @media (min-width: 667px){ .arrow {
+    border-width: 0 4px 4px 0;
+    padding: 8px;
+  }}
+  @media (min-width: 1024px){ .arrow {
+   position:absolute;
+   left: -999px;
+  }}
+/* .rotate{
     transform: rotate(45deg);
 	transition: 0.5s;
 
-}
+} */
 /*uitgeklapte lijst*/ /*lijst laten zien door display none te verwijderen*/
 footer nav>ul:first-of-type li ul{
     width:327px;
@@ -729,6 +434,10 @@ footer nav>ul:first-of-type li ul{
     flex-direction:column;
     gap:1em;
   }
+  @media (min-width: 1024px){footer nav>ul:first-of-type li ul{
+    width:10em;
+    align-items: left;
+  }}
   /* styling van linkjes in uitgeklapte lijst */
 footer nav>ul:first-of-type li ul li a{
     list-style:none;
@@ -746,6 +455,7 @@ footer nav>ul:first-of-type li ul.show{
 
 footer nav>ul:first-of-type>li{
     padding: 0 0 1.5em;
+    
 }
 
 /* hoofdkopjes in 1e deel van nav  */
@@ -758,12 +468,37 @@ color: var(--white);
 text-decoration: none;
 }
 
+@media (min-width: 1024px){
+     footer nav>ul:first-of-type>li:nth-of-type(4) a,
+     footer nav>ul:first-of-type>li:nth-of-type(5) a, 
+     footer nav>ul:first-of-type>li:nth-of-type(6) a {
+display: flex;
+position: relative;
+margin-top: 0.5em;
+font-size: 1.25em;
+width: 8em;
+}}
+
 
 /* social media images style  */
 footer nav>ul:nth-of-type(2) li a img{
-    width: 32px;
-    height:32px;
+    width: 2em;
+    height:2em;
 }
+@media (min-width: 1024px){footer nav>ul:nth-of-type(2) li a img{
+    width: 3em;
+    height: 3em;
+ }
+ }
+@media (min-width: 1024px){footer nav>ul:nth-of-type(2){
+    grid-column-start: 2;
+    grid-row-start: 2;
+    gap: 2em;
+    margin: 0;
+    height: 5em;
+}
+}
+
 /* 2022 Lime styling */
 footer nav>p {
     color: var(--white);
@@ -771,7 +506,11 @@ footer nav>p {
     font-family: Poppins, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 12px;
-    padding: 0 0 25px ;
+}
+@media (min-width: 1024px){footer nav>p {
+   padding: 3em 0 0 0;
+   font-size: 1em;
+}
 }
 /* linkjes cluster onderaan de pagina container  *//* 3e ul in nav*/
 footer nav>ul:nth-of-type(3){
@@ -782,7 +521,15 @@ footer nav>ul:nth-of-type(3){
     list-style:none;
     gap: 1em;
 }
+@media (min-width: 1024px){footer nav>ul:nth-of-type(3){
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 
+    gap: 2em;
+}
+}
 /* stijlen van list items  */
 footer nav>ul:nth-of-type(3) li{
     font-family: Poppins, Helvetica, sans-serif;

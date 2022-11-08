@@ -1,0 +1,563 @@
+/* CSS Document */
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+  box-sizing:border-box;  
+}
+/* variables*/
+:root{
+    --white: rgb(255 255 255);
+    --black: rgb(0 0 0);
+    --gray: rgb(238 238 238);
+    --green: rgb(0 221 0);
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+
+/* page wrapper */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* hide kopje, zodat de section wel een kop heeft */
+main section:first-of-type h1{
+    margin-left: -9999;
+}
+/*achtergrond hero img*/
+main section:first-of-type img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+@media (min-width: 1024px){ main section:first-of-type img {
+    height: 100%;
+    width: 100%;
+    }
+    }
+
+/* Ride green text   */
+main h1 {
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight:100;
+    font-size: 1.875em;
+    color: var(--white);
+    position:absolute;
+    top: 7.2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1024px){ main h1 {
+font-size: 2.5em;
+}
+}
+/* container content op hero img */
+/* positie van buttons */
+main section:nth-of-type(2) ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2em;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 18em;
+}
+@media (min-width: 1024px){ section:nth-of-type(2) ul{
+    margin-top: 5em;
+    }
+    }
+
+@media (max-width: 667px){ section:nth-of-type(2) ul{
+        flex-direction: column;
+        }
+        }
+
+main section:nth-of-type(2) li{
+    list-style: none;
+}
+
+main section:nth-of-type(2) li a{
+    align-items: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight:100;
+    font-size: 0.75em;
+    padding:  0.75em 1.5em;
+}
+main section:nth-of-type(2) li:nth-of-type(1) a{
+    color: var(--white);
+    border:1px solid var(--white);
+   
+}
+
+main section:nth-of-type(2) li:nth-of-type(2) a{
+    color: var(--black);
+    border:1px solid var(--green);
+    background-color: var(--green);
+    padding:  0.75em 3em;
+}
+@media (min-width: 1024px){ main section:nth-of-type(2) li a{
+    font-size: 1em;
+    }
+    }
+/* 2e deel van pagina (derde section) */
+/* container van pagina deel 2 */
+main section:nth-of-type(3){
+    background-color:var(--white);
+    margin-bottom:3.5em;
+    margin-top: 37em;
+    position:relative;
+ }
+
+/* bovenste kopjes bij elke section */
+main section h2{
+    font-size: 1em;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--green);
+    text-align: center;
+    margin-top: 5em;
+    line-height: 1.6;
+    
+}
+/* tweede kopje bij elke section */
+main section h3{
+    font-size:1.875em;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight:400;
+    color: var(--black);
+    text-align: center;
+    line-height: 1.6; 
+    }
+@media (min-width: 1024px){main section h2{
+    font-size: 1.25em;
+
+}
+}
+@media (min-width: 1024px){main section h3{
+    font-size: 2.5em;
+}
+}
+/* container van beide vehicles opties */
+main section:nth-of-type(3) ul{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (min-width: 1024px){ main section:nth-of-type(3) ul{
+flex-direction:row;
+justify-content: center;
+}
+}
+/* containers van 1 vehicles optie */
+main section:nth-of-type(3) li{
+    width: 20.4em;
+    background-color: var(--gray);
+    border-radius: 20px;
+    list-style: none;
+    
+}
+/* afbeeldingen van vehicles opties */
+main section:nth-of-type(3) li img{
+    width: 8em;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+/* linkjes naar soort vehicle + kopje */
+main section:nth-of-type(3) a{
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.28em;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight:200;
+}
+
+/* kopje eletric bike align maken met kopje electric scooter */
+main section:nth-of-type(3) li:nth-of-type(2) a{
+    margin-left: 5px;
+}
+@media (min-width: 1024px){ main section:nth-of-type(3) li{
+    display: flex;
+    justify-content:center;
+    padding: 2.5em;
+}
+}
+@media (min-width: 1024px){main section:nth-of-type(3) li img{
+    width: 15.83em;
+    height: auto;
+    padding: 1.25em 2.5em;
+    
+}
+}
+@media (min-width: 1024px){main section:nth-of-type(3) a {
+text-align: center;
+width: 20em;
+height: auto;
+}
+}
+/* 3e deel van pagina (vierde section) */
+/* container van pagina deel 3 */
+main section:nth-of-type(4){
+    background-color:var(--gray);
+ }
+/* style van h2 en h3 bij regel 98 */
+
+/* cards met stappenplan voor app */
+ main section:nth-of-type(4) ul{
+    width: auto;
+    margin-top: 2.5em;
+	padding:0;
+    list-style:none;
+    display:flex;
+    flex-direction:column; 
+    gap: 0.5em;
+    align-items: center;
+    margin-bottom:3.5em;
+ }
+ @media (min-width: 1024px){ main section:nth-of-type(4) ul{
+    flex-direction: row;
+    justify-content: center;
+    padding:1.5em;
+    width: auto;
+    height:32em;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1.5em;
+ }
+}
+/* uiterlijk van elke img in de cards */
+ main section:nth-of-type(4) ul li img{
+    width: 20.438em;
+    height:14.306em;
+    border-radius: 15px 15px 0 0;
+    text-decoration: none;
+    grid-column-start:1;
+    grid-column-end:-1;
+ }
+
+/* grid container voor cards  */
+ main section:nth-of-type(4) ul li{
+    width: 20.438em;
+    height: 21em;
+    background-color: var(--white);
+    border-radius: 15px;
+    list-style: none;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+ }
+
+ @media (min-width: 1024px){ main section:nth-of-type(4) ul li{
+    width: 100%;
+    height: 100%;
+}
+}
+@media (min-width: 1024px){ main section:nth-of-type(4) ul li img{
+    width: 100%;
+    height: auto;
+}
+}
+ 
+ /* stap van how to use (in de cards) */
+ main section:nth-of-type(4) ul li h4{
+    color: var(--green);
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight:200;
+    margin-left: 1em;
+ }
+ /* uitleg how to use (in de cards) */
+ main section:nth-of-type(4) ul li p{
+    grid-column-start:2;
+    grid-column-end:5;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 0.75em;
+    color: var(--black);
+    margin-left: 2em;
+ }
+ @media (min-width: 1024px){main section:nth-of-type(4) ul li h4{
+    font-size: 1.5em;
+ }
+}
+ @media (min-width: 1024px){main section:nth-of-type(4) ul li p{
+    font-size: 100%;
+ }
+}
+/* 4e deel van pagina (vijfde section) */
+/* container van pagina deel 4 */
+main section:nth-of-type(5){
+    background-color:var(--white);
+    padding:48px 0 48px 0;
+ }
+/* style van h3 bij regel 96 tm 115 */
+/* h2 van section 5 heeft andere margin-top */
+main section:nth-of-type(5) h2{
+    font-size: 1em;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--green);
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 0;
+    
+}
+/* carousel container */
+main section:nth-of-type(5) ul{
+    margin: 40px 0 20px 0 ;
+	padding:0 1.5em 0 1.5em;
+	list-style:none;
+	
+	display:flex;
+	gap:0.5em;
+	
+	overflow-x:scroll;
+    overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+	
+	scroll-behavior:smooth;
+}
+@media (min-width: 1024px){ main section:nth-of-type(5) ul{
+    gap: 1.5em;
+    padding: 0 4.656em;
+}
+}
+/* container van elke card */
+main section:nth-last-of-type(5) ul li{ 
+    flex-shrink:0;
+	scroll-snap-align: center;
+}
+
+main section:nth-of-type(5) ul li > a{
+    display: none;
+}
+
+main section:nth-of-type(5) ul li img{
+    width: 19.938em;
+    height: auto;
+    border-radius: 15px;
+    text-decoration: none;
+}
+@media (min-width: 1024px){ main section:nth-of-type(5) ul li img{
+    width: 30.5em;
+    height:auto;
+ }
+}
+main section:nth-of-type(5) ul li p{
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    margin: 12px 0 0 0 ;
+}
+/* dots to move carousel */
+main section:nth-of-type(5) a{
+    
+    display:inline-block;
+	width:0.625em;
+	height:0.625em;
+	border-radius:50%;
+	margin:0.375em;
+	background-color:rgb(147 146 146);
+	overflow:hidden;
+	color:transparent;
+
+}
+
+main section:nth-of-type(5) div{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+@media (min-width: 1024px){ main section:nth-of-type(5) div{
+    margin-top: 2em;
+    gap: 1em;
+}
+}
+
+/* 5e deel van pagina (zesde section) */
+/* container van pagina deel 5 */
+main section:nth-of-type(6){
+    background-color:rgb(26 26 26);
+    padding:3em 0 3em 0;
+ }
+
+ /* kopje Lime times blog */
+ main section:nth-of-type(6) h2{
+    margin: 1.5em 0 0 0 ;
+ }
+/* kopje our latest news */
+ main section:nth-of-type(6) h3{
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 100;
+    color: var(--white);
+    text-align: center;
+    line-height: 1.6;
+    margin: 4px 0 0 0;
+}
+/* container van alle cards */
+main section:nth-of-type(6) ul {
+    display: flex;
+    gap:0.5em;
+    margin: 40px 0 56px 0 ;
+    padding:0 1.5em 0 1.5em;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+
+}
+@media (min-width: 1024px){main section:nth-of-type(6) ul {
+   gap: 1em;
+}
+}
+/* Card styling */
+main section:nth-of-type(6) ul li {
+    list-style: none;
+    background-color: var(--black);
+    border-radius:15px;
+    width: 19.938em;
+}
+@media (min-width: 1024px){main section:nth-of-type(6) ul li {
+    width: 100%;
+    height: 30em;
+}
+}
+/* tekst op cards styling */
+main section:nth-of-type(6) ul li p{
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    color: var(--white);
+    padding:36px 48px 44px;
+}
+/* foto's op card styling  */
+main section:nth-of-type(6) ul li img{
+    width: 19.938em;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+@media (min-width: 1024px){main section:nth-of-type(6) ul li img{
+    width: 100%;
+}
+}
+/* pijlen op cards styling  */
+main section:nth-of-type(6) ul li img:nth-of-type(2){
+   width: 1.875em;
+   height: 1.875em;
+   padding: 10px;
+   margin:0 0 1.7em 3em;
+   border-radius: 50%;
+   border: 0.5px solid white;
+}
+@media (min-width: 1024px){main section:nth-of-type(6) ul li img:nth-of-type(2){
+    width: 2.2em;
+    height: 2.2em;
+}}
+/* view more button styling  */
+main section:nth-of-type(6) div a {
+   padding: 10px 24px;
+   background-color: var(--green);
+   font-family: Poppins, Helvetica, sans-serif;
+   font-weight: 200;
+   font-size: 12px;
+   color: var(--white);
+   text-decoration: none;
+   border-radius: 25px;
+}
+@media (min-width: 1024px){main section:nth-of-type(6) div a{
+    font-size: 1em;
+}}
+/* center view more button */
+main div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 6e deel van pagina (zevende section) */
+/* container van pagina deel 6 */
+main section:nth-of-type(7){
+    background-color:rgb(24 24 24);
+    padding:7em 0 6em 0;
+}
+@media (min-width: 1024px){main section:nth-of-type(7) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}}
+/* positie en grootte van mobile image  */
+main section:nth-of-type(7) > img{
+width: 17.438em;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+@media (min-width: 1024px){main section:nth-of-type(7) >img{
+    width: 28.125em;
+}}
+/* verandering van h2 styling  */
+main section:nth-of-type(7) h2{
+    font-size: 30px;
+    color: var(--white);
+    text-align: left;
+    margin-left: 1.25em;
+    margin-top: 1.25em;
+}
+@media (min-width: 1024px){main section:nth-of-type(7) h2 {
+    font-size: 2.5em;
+    margin: 5em 0 0 0;
+    width: auto;
+    height: 3em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}}
+/* container van afbeeldingen */
+main section:nth-of-type(7) ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.5em;
+    margin-top: 1.25em;
+    margin-left: 1.25em;
+}
+@media (min-width: 1024px){main section:nth-of-type(7) ul {
+    position:relative;
+    height: 3em;
+    margin-left: 0;
+    top: 20em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}}
+/* grotte eerste image, app store */
+main section:nth-of-type(7) ul li:first-of-type img{
+    height: 50px;
+}
+@media (min-width: 1024px){main section:nth-of-type(7) ul li:first-of-type img {
+    width: 12em;
+    height: 100%;
+
+}}
+/* grootte tweede image, play store */
+main section:nth-of-type(7) ul li:nth-of-type(2) img{
+    width:190px;
+}
+@media (min-width: 1024px){main section:nth-of-type(7) ul li:nth-of-type(2) img {
+    width: 15em;
+    height: 100%;
+
+}}
