@@ -111,13 +111,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 Dit zijn mijn schetsen die ik van te voren heb gemaakt, waardoor het gemakkelijker was om te beginnen aan het schrijven van mijn css.  
 <p>Afbeelding 1: schets van 2e deel van homepagina.</p>
-<img src="images/2eDeelHomepage" width="375px" alt="homepagina ccs schets">
+<img src="images/2eDeelHomepage.JPG" width="375px" alt="homepagina ccs schets">
 [code testen in codepen voor 3e deel van home pagina](https://codepen.io/yentevdaart/pen/JjvBwKd)
 <p>Afbeelding 2: schets van 3e deel van homepagina</p>
-<img src="images/3eDeelHomepage" width="375px" alt="homepagina ccs schets">
+<img src="images/3eDeelHomepage.JPG" width="375px" alt="homepagina ccs schets">
 [code testen in codepen voor 4e deel van home pagina](https://codepen.io/yentevdaart/pen/ExLzKqG)
 <p>Afbeelding 3: schets van 4e deel van homepagina</p>
-<img src="images/4eDeelHomepage" width="375px" alt="homepagina ccs schets">
+<img src="images/4eDeelHomepage.JPG" width="375px" alt="homepagina ccs schets">
 
 
 ### Agenda voor meeting
@@ -166,7 +166,7 @@ Op te lossen door het vergroten van lettertype.
 
 Op te lossen door de call to action button onder elkaar te zetten en groter te maken.
 Te zien in mijn eind resultaat:
-<img src="images/buttonsOnderElkaar" width="375px" alt="call to action verbeterd ">
+<img src="images/buttonsOnderElkaar.png" width="375px" alt="call to action verbeterd ">
 
 #### Hover kleur te klein verschil 
 <img src="images/HoverTinyDiffrence.png" width="375px" alt="hover kleur is 1 tint donkerder">
